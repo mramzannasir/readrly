@@ -37,14 +37,14 @@ const Navbar = () => {
 					{/* Close btn */}
 					<div
 						onClick={onclick}
-						className="absolute right-3 top-8 z-[99] cursor-pointer text-2xl transition-all duration-500 lg:hidden">
+						className="absolute right-3 top-[32px] z-[99] cursor-pointer text-2xl transition-all duration-500 lg:hidden">
 						{open ? (
 							<div className="sm:hidden">
 								{" "}
 								<IoMdClose color="#ffffff" />
 							</div>
 						) : (
-							<FiMenu size={27} color="white" />
+							<FiMenu size={31} color="white" />
 						)}
 					</div>
 					{/* Navbar */}
@@ -104,7 +104,7 @@ const Navbar = () => {
 					</div>
 					{/* Cart */}
 					<div className="lg:hidden ">
-						<button className="mr-[36px] mt-[10px] flex h-7 w-[5rem] items-center justify-center gap-1 rounded-sm bg-white text-black lg:mr-0 lg:ml-4">
+						<button className="mr-[38px] mt-[10px] flex h-7 w-[5rem] items-center justify-center gap-1 rounded-sm bg-white text-black lg:mr-0 lg:ml-4">
 							<div>
 								<BsCart3 size={20} />
 							</div>
