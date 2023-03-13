@@ -10,7 +10,7 @@ module.exports = {
 		extend: {
 			colors: {
 				purple: "#8015E8",
-				purpleLight: "8858ED",
+				purpleLight: "#8858ED",
 				black: "#272443",
 				gray: " #F6F4F0",
 				yellow: "#FDA923",

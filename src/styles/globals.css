@@ -7,7 +7,7 @@
     @apply flex flex-col w-full h-full justify-center items-center;
 }
 .contain{
-    @apply w-[92%] md:w-[90%] lg:w-[85%] xl:w-[90%] 2xl:w-[1440px] ;
+    @apply w-[92%] md:w-[90%] lg:w-[85%] xl:w-[90%] 2xl:w-[1440px] flex ;
 }
 
 .headings{
