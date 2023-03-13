@@ -1,4 +1,6 @@
+import Layout from "@/Layout/Layout";
 import Head from "next/head";
+
 export default function Home() {
 	return (
 		<>
@@ -8,32 +10,9 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main>
-				<div className="wrapper bg-purple">
-					<div className="contain text-white">
-						<h1 className="headings font-black">Readrly</h1>
-						<h1 className="subHeadings font-black">laudantium</h1>
-						<p className="des">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-							exercitationem sequi animi libero laudantium maxime fugiat
-							blanditiis eveniet architecto? Commodi pariatur at tempore iure
-							ab, maxime possimus molestias corrupti odio!
-						</p>
-						<h2 className="title font-bold">
-							Benefit of Personalizing Books with Readrly
-						</h2>
-						<h2 className="subTitle font-semibold">
-							Lusto ad sequi amet dicta soluta architecto autem
-						</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
-							minima. Mollitia, doloribus reprehenderit debitis quaerat corporis
-							iusto ad sequi amet dicta soluta architecto autem expedita et
-							perspiciatis molestiae, reiciendis voluptatum?
-						</p>
-					</div>
-				</div>
-			</main>
+			<div className="w-full">
+				<Layout/>
+			</div>
 		</>
 	);
 }
