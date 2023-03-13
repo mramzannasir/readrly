@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper{
+    @apply flex flex-col w-full h-full justify-center items-center;
+}
+.contain{
+    @apply w-[92%] md:w-[90%] lg:w-[85%] xl:w-[90%] 2xl:w-[1440px] ;
+}
+
+.headings{
+    @apply text-[37px] md:text-[42px] lg:text-[50px] xl:text-[55px] 2xl:text-[60px]
+}
+.subHeadings{
+    @apply text-[31px] md:text-[35px] lg:text-[45px];
+}
+.title{
+    @apply text-[28px] md:text-[30px] lg:text-[35px]
+}
+.subTitle{
+    @apply text-[24px] md:text-[28px] lg:text-[30px];
+}
+.des{
+    @apply text-sm md:text-base;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
