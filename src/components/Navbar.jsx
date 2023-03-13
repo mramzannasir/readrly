@@ -104,7 +104,7 @@ const Navbar = () => {
 					</div>
 					{/* Cart */}
 					<div className="lg:hidden ">
-						<button className="mr-[38px] mt-[10px] flex h-7 w-[5rem] items-center justify-center gap-1 rounded-sm bg-white text-black lg:mr-0 lg:ml-4">
+						<button className="mr-[38px] mt-[11px] flex h-7 w-[5rem] items-center justify-center gap-1 rounded-sm bg-white text-black lg:mr-0 lg:ml-4">
 							<div>
 								<BsCart3 size={20} />
 							</div>
