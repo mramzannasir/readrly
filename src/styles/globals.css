@@ -11,13 +11,13 @@
 }
 
 .headings{
-    @apply text-[37px] md:text-[42px] lg:text-[50px] xl:text-[55px] 2xl:text-[60px]
+    @apply text-[37px] md:text-[42px] lg:text-[50px] xl:text-[55px] 2xl:text-[68px]  leading-[2.2rem] md:leading-[2.6rem] lg:leading-[3.2rem] xl:leading-[4rem]
 }
 .subHeadings{
-    @apply text-[31px] md:text-[35px] lg:text-[45px];
+    @apply text-[31px] md:text-[35px] lg:text-[45px] leading-[2rem] md:leading-[2.3rem] lg:leading-[2.9rem] xl:leading-[3rem];
 }
 .title{
-    @apply text-[28px] md:text-[30px] lg:text-[35px]
+    @apply text-[22px] md:text-[28px] lg:text-[32px] leading-[1.5rem] md:leading-[2.3rem] lg:leading-[2.9rem] xl:leading-[3rem]
 }
 .subTitle{
     @apply text-[24px] md:text-[28px] lg:text-[30px];
@@ -29,4 +29,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     transition: all 1s;
+}
+.b{
+    box-shadow: -3px 5px #272443
 }
