@@ -18,7 +18,7 @@ const Navbar = () => {
 	const router = useRouter();
 	return (
 		<>
-			<div className="s flex h-[4rem] w-[100%] items-center justify-center">
+			<div className="s flex  h-[5rem] w-[100%] items-center justify-center">
 				{open ? (
 					<div className="absolute top-0 left-0 h-full w-full bg-[#00000067] lg:hidden"></div>
 				) : (
@@ -37,7 +37,7 @@ const Navbar = () => {
 					{/* Close btn */}
 					<div
 						onClick={onclick}
-						className="absolute right-4 top-6 z-[99] cursor-pointer text-2xl transition-all duration-500 lg:hidden">
+						className="absolute right-3 top-8 z-[99] cursor-pointer text-2xl transition-all duration-500 lg:hidden">
 						{open ? (
 							<div className="sm:hidden">
 								{" "}
@@ -104,7 +104,7 @@ const Navbar = () => {
 					</div>
 					{/* Cart */}
 					<div className="lg:hidden ">
-						<button className="mr-10 mt-[9px] flex h-7 w-[5rem] items-center justify-center gap-1 rounded-sm bg-white text-black lg:mr-0 lg:ml-4">
+						<button className="mr-[36px] mt-[10px] flex h-7 w-[5rem] items-center justify-center gap-1 rounded-sm bg-white text-black lg:mr-0 lg:ml-4">
 							<div>
 								<BsCart3 size={20} />
 							</div>
