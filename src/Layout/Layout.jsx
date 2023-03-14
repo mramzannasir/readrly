@@ -217,7 +217,7 @@ const Layout = () => {
 					</div>
 					<div className="w-full lg:w-[48%] lg:pl-8">
 						<img
-							data-aos="fade-left"
+							data-aos="fade-up"
 							src="/child-1.png"
 							className="mx-auto"
 							alt=""
@@ -230,7 +230,7 @@ const Layout = () => {
 				<div className="contain relative flex-col gap-4 pt-16 lg:flex-row lg:items-center lg:justify-between lg:pt-28">
 					<div className="w-full lg:w-[48%] lg:pr-8">
 						<img
-							data-aos="fade-right"
+							data-aos="fade-up"
 							src="/child-2.png"
 							className="mx-auto lg:mx-0"
 							alt=""
@@ -276,7 +276,7 @@ const Layout = () => {
 					</div>
 					<div className="w-full lg:w-[48%] lg:pl-8">
 						<img
-							data-aos="fade-left"
+							data-aos="fade-up"
 							src="/child-3.png"
 							className="mx-auto"
 							alt=""
@@ -291,7 +291,7 @@ const Layout = () => {
 				<div className="contain relative flex-col gap-4 pt-16 lg:flex-row lg:items-center lg:justify-between lg:pt-28">
 					<div className="w-full lg:w-[48%] lg:pr-8">
 						<img
-							data-aos="fade-right"
+							data-aos="fade-up"
 							src="/child-4.png"
 							className="mx-auto lg:mx-0"
 							alt=""
