@@ -17,7 +17,10 @@
     @apply text-[31px] md:text-[35px] lg:text-[45px] leading-[2rem] md:leading-[2.3rem] lg:leading-[2.9rem] xl:leading-[3rem];
 }
 .title{
-    @apply text-[22px] md:text-[28px] lg:text-[32px] leading-[1.5rem] md:leading-[2.3rem] lg:leading-[2.9rem] xl:leading-[3rem]
+    @apply text-[22px] md:text-[24px]  leading-[1.5rem] md:leading-[2.3rem] lg:leading-[2.9rem] xl:leading-[3rem]
+}
+.mtitle{
+    @apply text-[24px] md:text-[28px] lg:text-[30px] leading-[1.5rem] md:leading-[2.3rem] lg:leading-[2.9rem] xl:leading-[3rem]
 }
 .subTitle{
     @apply text-[24px] md:text-[28px] lg:text-[30px];
