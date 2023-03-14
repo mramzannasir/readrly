@@ -368,7 +368,7 @@ const Layout = () => {
 								At Readrly, we make it possible to create a personalized
 								storybook that is truly unique and special to your child. With
 								our wide range of books and our fast customization and shipping,
-								we make sure that your child's storybook is perfect and arrives
+								we make sure that your childs storybook is perfect and arrives
 								in no time!
 							</span>
 						</p>
