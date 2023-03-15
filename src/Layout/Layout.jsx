@@ -27,7 +27,7 @@ const Layout = () => {
 					</div>
 				</div>
 				{/* Banner */}
-				<div className="wrapper  pt-[60px] pb-[30px] lg:pt-[80px] lg:pb-[30px]">
+				<div className="wrapper pt-[60px] pb-[30px] lg:pt-[80px] lg:pb-[30px]">
 					<div className="contain flex-col items-center gap-5 text-white lg:flex-row">
 						<div className="w-full lg:w-[50%]">
 							<h1 className="headings text-center font-black lg:text-left">
