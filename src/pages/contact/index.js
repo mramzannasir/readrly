@@ -29,13 +29,13 @@ const index = () => {
 					<Navbar />
 				</div>
 			</div>
-			<div className="wrapper my-[40px] md:my-[67px]">
+			<div className="wrapper mt-[40px] md:mt-[67px]">
 				<div className="wrapper">
 					<div className="subHeadings font-extrabold text-black">
 						Contact Us
 					</div>
 					<div className=" w-[95%] sm:w-[55%]">
-						<p className="des my-5 text-center sm:text-left">
+						<p className="des my-5 text-center sm:text-left text-black">
 							We are happy to assist with any questions that come up during your
 							ordering process or with any other help you may need. Kindly fill
 							the form below to reach out to us or send us a mail directly to{" "}
@@ -54,7 +54,7 @@ const index = () => {
 						<form
 							action=""
 							onSubmit={handleSubmit(onSubmit)}
-							className="flex w-[98%]  flex-col gap-4 sm:w-[90%]">
+							className="flex w-[96%]  flex-col gap-4 sm:w-[90%]">
 							<div>
 								<label
 									className="text-sm font-semibold text-black lg:text-base"
