@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @next/next/no-img-element */
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import React, { useState } from "react";
 import Book from "./Books";
@@ -30,28 +31,36 @@ const index = () => {
 					<div
 						onClick={() => setNavigate(1)}
 						className={`flex ${
-							navigate === 1 ? "border-purpleLight bg-purpleLight text-white" : ""
+							navigate === 1
+								? "border-purpleLight bg-purpleLight text-white"
+								: ""
 						} h-[2.5rem] cursor-pointer items-center justify-center rounded-md border-[1px] border-[#8E8E8E] px-3 text-[#8e8e8e] transition-all duration-500`}>
 						About Readrly Books
 					</div>
 					<div
 						onClick={() => setNavigate(2)}
 						className={`flex ${
-							navigate === 2 ? "border-purpleLight bg-purpleLight text-white" : ""
+							navigate === 2
+								? "border-purpleLight bg-purpleLight text-white"
+								: ""
 						} h-[2.5rem] cursor-pointer items-center justify-center rounded-md border-[1px] border-[#8E8E8E] px-3 text-[#8e8e8e] transition-all duration-500`}>
 						Customization
 					</div>
 					<div
 						onClick={() => setNavigate(3)}
 						className={`flex ${
-							navigate === 3 ? "border-purpleLight bg-purpleLight text-white" : ""
+							navigate === 3
+								? "border-purpleLight bg-purpleLight text-white"
+								: ""
 						} h-[2.5rem] cursor-pointer items-center justify-center rounded-md border-[1px] border-[#8E8E8E] px-3 text-[#8e8e8e] transition-all duration-500`}>
 						Placing an Order
 					</div>
 					<div
 						onClick={() => setNavigate(4)}
 						className={`flex ${
-							navigate === 4 ? "border-purpleLight bg-purpleLight text-white" : ""
+							navigate === 4
+								? "border-purpleLight bg-purpleLight text-white"
+								: ""
 						} h-[2.5rem] cursor-pointer items-center justify-center rounded-md border-[1px] border-[#8E8E8E] px-3 text-[#8e8e8e] transition-all duration-500`}>
 						Shipping
 					</div>
@@ -65,13 +74,16 @@ const index = () => {
 						Data & Privacy
 					</div>
 				</div>
-				<div className="contain mt-8">
+				<div className="contain  mt-8">
 					{navigate === 1 && <Book />}
 					{navigate === 2 && <Customize />}
 					{navigate === 3 && <Order />}
 					{navigate === 4 && <Shipping />}
 					{navigate === 5 && <Privacy />}
 				</div>
+			</div>
+			<div className="wrapper">
+				<Footer />
 			</div>
 		</>
 	);
