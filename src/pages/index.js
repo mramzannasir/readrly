@@ -5,26 +5,6 @@ import { useEffect, useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Home() {
-	const [show, setShow] = useState(false);
-	useEffect(() => {
-		const timeoutId = setTimeout(() => {
-			localStorage.setItem("hasBeenSet", true);
-			setShow(true);
-			const hasBeenSet = localStorage.getItem("hasBeenSet");
-			if (hasBeenSet === "hasBeenSet") {
-				setShow(false);
-			}
-		}, 800);
-		return () => clearTimeout(timeoutId); // cleanup function to clear timeout
-	}, []);
-	const [showT, setShowT] = useState(false);
-	useEffect(() => {
-		const timeoutId = setTimeout(() => {
-			setShowT(true);
-		}, 600);
-		return () => clearTimeout(timeoutId); // cleanup function to clear timeout
-	}, []);
-
 	return (
 		<>
 			<Head>
@@ -34,21 +14,6 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<div
-				className={`absolute ${
-					show ? "scale-x-0 opacity-30" : "opacity-100 "
-				} top-0 left-0 bottom-0 z-[100] flex h-full w-full items-center justify-center  bg-black transition-all duration-1000 `}>
-				<div
-					className={` transition-all duration-200  ${
-						showT ? "hidden" : "block"
-					} `}>
-					<img
-						src="/Spinner-1s-200px.gif"
-						className="w-[3rem] md:w-auto"
-						alt=""
-					/>
-				</div>
-			</div>
 			<div className="w-full">
 				<Layout />
 			</div>

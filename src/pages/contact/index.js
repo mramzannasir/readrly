@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import { useForm } from "react-hook-form";
 import { BsCardImage } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const index = () => {
 	const router = useRouter();
@@ -29,13 +30,18 @@ const index = () => {
 					<Navbar />
 				</div>
 			</div>
-			<div className="wrapper mt-[40px] md:mt-[67px]">
+			<motion.div
+				initial={{ scale: 0.8, opacity: 0 }}
+				animate={{ scale: 1, opacity: 1 }}
+				exit={{ scale: 0.4, opacity: 0 }}
+				transition={{ type: "spring", duration: 1 }}
+				className="wrapper mt-[40px] md:mt-[67px]">
 				<div className="wrapper">
 					<div className="subHeadings font-extrabold text-black">
 						Contact Us
 					</div>
 					<div className=" w-[95%] sm:w-[55%]">
-						<p className="des my-5 text-center sm:text-left text-black">
+						<p className="des my-5 text-center text-black sm:text-left">
 							We are happy to assist with any questions that come up during your
 							ordering process or with any other help you may need. Kindly fill
 							the form below to reach out to us or send us a mail directly to{" "}
@@ -59,7 +65,7 @@ const index = () => {
 								<label
 									className="text-sm font-semibold text-black lg:text-base"
 									htmlFor="">
-									Full Name <sub className="text-xl ml-1 text-red-600">*</sub>{" "}
+									Full Name <sub className="ml-1 text-xl text-red-600">*</sub>{" "}
 								</label>
 								<div className="mt-1 h-[40px]  rounded-sm border-[1px] border-[#8E8E8E]">
 									<input
@@ -97,7 +103,8 @@ const index = () => {
 								<label
 									className="text-sm font-semibold text-black lg:text-base"
 									htmlFor="">
-									Email Address <sub className="text-xl ml-1 text-red-600">*</sub>{" "}
+									Email Address{" "}
+									<sub className="ml-1 text-xl text-red-600">*</sub>{" "}
 								</label>
 								<div className="mt-1 h-[40px] rounded-sm border-[1px] border-[#8E8E8E]">
 									<input
@@ -127,7 +134,7 @@ const index = () => {
 								<label
 									className="text-sm font-semibold text-black lg:text-base"
 									htmlFor="">
-									Phone Number<sub className="text-xl ml-1 text-red-600">*</sub>{" "}
+									Phone Number<sub className="ml-1 text-xl text-red-600">*</sub>{" "}
 								</label>
 								<div className="mt-1 h-[40px]  rounded-sm border-[1px] border-[#8E8E8E]">
 									<input
@@ -157,7 +164,7 @@ const index = () => {
 								<label
 									className="text-sm font-semibold text-black lg:text-base"
 									htmlFor="">
-									Subject<sub className="text-xl ml-1 text-red-600">*</sub>{" "}
+									Subject<sub className="ml-1 text-xl text-red-600">*</sub>{" "}
 								</label>
 								<div className="mt-1 h-[40px]  rounded-sm border-[1px] border-[#8E8E8E]">
 									<input
@@ -208,7 +215,7 @@ const index = () => {
 								</label>
 								<div className="mt-1 h-[40px]  rounded-sm border-[1px] border-[#8E8E8E]">
 									<div class="upload-btn-wrapper relative h-full w-full">
-										<button  className="btn absolute flex h-full w-full items-center justify-center gap-1">
+										<button className="btn absolute flex h-full w-full items-center justify-center gap-1">
 											<div>
 												<BsCardImage size={20} color="#8E8E8E" />
 											</div>
@@ -216,12 +223,16 @@ const index = () => {
 												Upload
 											</div>
 										</button>
-										<input className="w-full cursor-pointer" type="file" name="myfile" />
+										<input
+											className="w-full cursor-pointer"
+											type="file"
+											name="myfile"
+										/>
 									</div>
 								</div>
 							</div>
 							<button
-								className="w-[6rem] mx-auto sm:mx-0 rounded bg-purpleLight py-2 text-center text-sm  uppercase text-white lg:text-base"
+								className="mx-auto w-[6rem] rounded bg-purpleLight py-2 text-center text-sm uppercase  text-white sm:mx-0 lg:text-base"
 								type="submit">
 								Submit
 							</button>
@@ -231,7 +242,7 @@ const index = () => {
 				<div className="wrapper mt-10 md:mt-20">
 					<Footer />
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 };

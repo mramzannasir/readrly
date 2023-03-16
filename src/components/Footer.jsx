@@ -2,8 +2,10 @@ import React from "react";
 import { CgFacebook } from "react-icons/cg";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+	const router = useRouter();
 	return (
 		<>
 			<div className="wrapper bg-purpleLight">
@@ -40,10 +42,14 @@ const Footer = () => {
 								<li className="font-extrabold">About us</li>
 								<li>About Readrly</li>
 								<li>Privacy & Policy</li>
-								<li>Terms & Conditions</li>
+								<li
+									onClick={() => router.push("/conditions")}
+									className="cursor-pointer ">
+									Terms & Conditions
+								</li>
 							</ul>
 						</div>
-						<div className="flex gap-6 w-full flex-col lg:w-[60%] md:flex-row md:justify-between">
+						<div className="flex w-full flex-col gap-6 md:flex-row md:justify-between lg:w-[60%]">
 							<ul className="des flex flex-col gap-3">
 								<li className="font-extrabold">Navigation</li>
 								<li>Customize</li>
@@ -80,7 +86,9 @@ const Footer = () => {
 				</div>
 				<div className="mt-10 mb-6">
 					<div>
-						<p className="des underline-offset-4 cursor-pointer underline opacity-70">Powered by Readrly</p>
+						<p className="des cursor-pointer underline underline-offset-4 opacity-70">
+							Powered by Readrly
+						</p>
 					</div>
 				</div>
 			</div>
