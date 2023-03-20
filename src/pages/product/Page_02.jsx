@@ -16,7 +16,7 @@ const Page_02 = () => {
 			{show && (
 				<div className="absolute top-0 left-0 z-[100] flex h-full w-full items-center justify-center bg-slate-500 bg-opacity-70">
 					<div className="h-[26rem] flex justify-center items-center flex-col w-[95%] rounded-sm bg-white p-2 shadow-2xl  lg:w-[700px]">
-						<div className="flex w-[90%] items-stretch justify-between">
+						<div className="flex w-[95%] items-stretch justify-between">
 							<div>
 								<h1 className="des font-semibold text-black">
 									Preview Information
@@ -26,9 +26,7 @@ const Page_02 = () => {
 									provided
 								</p>
 							</div>
-							<div onClick={(()=>setShow(!show))} className="flex  h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-[#f2f2f2]">
-								<IoCloseSharp size={25} />
-							</div>
+							<div onClick={(()=>setShow(!show))} className="h-8 w-[3rem] sm:w-8 cursor-pointer rounded-full flex justify-center items-center font-extrabold text-black bg-[#f2f2f2] text-[16px]">X</div>
 						</div>
 						<div className="flex my-8 w-full items-center justify-center">
 							<img src="/cart-book.png" alt="" />
@@ -128,7 +126,7 @@ const Page_02 = () => {
 												<label htmlFor="" className="des  font-extrabold">
 													Select Book Size
 												</label>
-												<div className="mt-2 flex w-full flex-col items-center md:flex-row md:justify-between">
+												<div className="mt-2 flex w-full flex-col gap-3 md:gap-0 items-center md:flex-row md:justify-between">
 													<div className="des flex h-[40px] w-full cursor-pointer items-center justify-center rounded-sm border border-[#8e8e8e] text-[#8e8e8e] transition-all duration-300 hover:border-purpleLight hover:shadow md:w-[31%]">
 														7.5’’ X 7.5’’
 													</div>

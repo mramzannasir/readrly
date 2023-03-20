@@ -42,7 +42,7 @@ const Layout = () => {
 							</p>
 							<button
 								onClick={() => router.push("/product")}
-								className="b mx-auto flex h-[55px] w-[205px] items-center justify-center rounded-sm bg-white text-base font-extrabold text-black lg:mx-0">
+								className="b1 mx-auto flex h-[55px] w-[205px] items-center justify-center rounded-sm bg-white text-base font-extrabold text-black lg:mx-0">
 								Personalize Now
 							</button>
 						</div>
