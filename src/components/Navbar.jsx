@@ -19,11 +19,11 @@ const Navbar = () => {
 	return (
 		<>
 			<div className="s flex  h-[5rem] w-[100%] items-center justify-center">
-			 {open ? (
+				{open ? (
 					<div className="absolute top-0 left-0 h-full w-full bg-[#00000067] lg:hidden"></div>
 				) : (
 					""
-				)} 
+				)}
 				<nav className="flex w-[100%]  items-center justify-between">
 					<div className="logo">
 						<Link href={"/"}>
@@ -63,7 +63,7 @@ const Navbar = () => {
 									? "w-[90%] rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
 									: "pl-2 text-xl font-semibold text-white lg:pl-0 lg:text-base lg:font-medium "
 							}
-							href={"/customize"}>
+							href={"/product"}>
 							Customize
 						</Link>{" "}
 						<Link

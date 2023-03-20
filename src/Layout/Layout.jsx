@@ -6,11 +6,13 @@ import { BsChevronDoubleRight } from "react-icons/bs";
 import { HiPlayCircle } from "react-icons/hi2";
 import { GrClose } from "react-icons/gr";
 import { BsApple } from "react-icons/bs";
-import {IoLogoGooglePlaystore} from "react-icons/io5"
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { useRouter } from "next/router";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Layout = () => {
+	const router = useRouter();
 	const [show, setShow] = useState(false);
 	useEffect(() => {
 		AOS.init({
@@ -38,7 +40,9 @@ const Layout = () => {
 								to customise their characters, choose their narratives, and
 								visualise their adventures.
 							</p>
-							<button className="b mx-auto flex h-[55px] w-[205px] items-center justify-center rounded-sm bg-white text-base font-extrabold text-black lg:mx-0">
+							<button
+								onClick={() => router.push("/product")}
+								className="b mx-auto flex h-[55px] w-[205px] items-center justify-center rounded-sm bg-white text-base font-extrabold text-black lg:mx-0">
 								Personalize Now
 							</button>
 						</div>
@@ -186,7 +190,9 @@ const Layout = () => {
 				</div>
 			</div>
 			{/* Get section */}
-			<div data-aos="fade-up" className="wrapper mt-5 transition-all duration-500">
+			<div
+				data-aos="fade-up"
+				className="wrapper mt-5 transition-all duration-500">
 				<div className="subHeadings text-center font-black text-black">
 					What You Get From Us{" "}
 				</div>
@@ -321,7 +327,9 @@ const Layout = () => {
 			</div>
 			{/* Side  by side sections */}
 			<div className="wrapper mt-[5rem] bg-gray py-[40px] md:mt-[10rem] lg:py-[74px]">
-				<div data-aos="fade-up" className="contain flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
+				<div
+					data-aos="fade-up"
+					className="contain flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
 					<div className="w-full lg:w-[48%]">
 						<h1 className="mtitle text-center font-extrabold text-black sm:text-left">
 							No two stories are the same.
@@ -345,7 +353,9 @@ const Layout = () => {
 				</div>
 			</div>
 			<div className="wrapper mt-[5rem]   md:mt-[10rem]">
-				<div data-aos="fade-up" className="contain flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
+				<div
+					data-aos="fade-up"
+					className="contain flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
 					<div className="flex w-full lg:w-[43%] lg:justify-end">
 						<img src="/3.png" className="w-full " alt="" />
 					</div>
@@ -383,7 +393,9 @@ const Layout = () => {
 			</div>
 
 			<div className="wrapper mt-[5rem] bg-gray py-[40px] md:mt-[10rem]">
-				<div data-aos="fade-up" className="contain flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
+				<div
+					data-aos="fade-up"
+					className="contain flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
 					<div className="w-full lg:w-[48%]">
 						<h1 className="mtitle text-center font-extrabold text-black sm:text-left">
 							Customize storybooks for your children from any device.
@@ -417,7 +429,7 @@ const Layout = () => {
 										Download on the
 									</h1>
 									<h1 className="-mt-1 text-sm font-medium text-white">
-									Playstore
+										Playstore
 									</h1>
 								</div>
 							</button>
@@ -430,7 +442,7 @@ const Layout = () => {
 			</div>
 
 			{/* Footer */}
-			<div  className="wrapper ">
+			<div className="wrapper ">
 				<Footer />
 			</div>
 		</>
