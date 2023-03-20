@@ -60,7 +60,7 @@ const Navbar = () => {
 						<Link
 							className={
 								router.pathname == "/customize"
-									? "w-[90%] rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
+									? " rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
 									: "pl-2 text-xl font-semibold text-white lg:pl-0 lg:text-base lg:font-medium "
 							}
 							href={"/product"}>
@@ -69,7 +69,7 @@ const Navbar = () => {
 						<Link
 							className={
 								router.pathname == "/contact"
-									? "w-[90%] rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
+									? " rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
 									: "pl-2 text-xl font-semibold text-white lg:pl-0 lg:text-base lg:font-medium"
 							}
 							href={"/contact"}>
@@ -78,7 +78,7 @@ const Navbar = () => {
 						<Link
 							className={
 								router.pathname == "/faq"
-									? "w-[90%] rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
+									? " rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
 									: "pl-2 text-xl font-semibold text-white lg:pl-0 lg:text-base lg:font-medium"
 							}
 							href={"/faq"}>
@@ -87,7 +87,7 @@ const Navbar = () => {
 						<Link
 							className={
 								router.pathname == "/about"
-									? "w-[90%] rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
+									? " rounded-r-xl  px-4 py-2 text-xl font-semibold text-white lg:w-auto lg:bg-inherit lg:text-base lg:font-medium"
 									: "pl-2 text-xl font-semibold text-white lg:pl-0 lg:text-base lg:font-medium"
 							}
 							href={"/about"}>
